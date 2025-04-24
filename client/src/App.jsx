@@ -1,4 +1,3 @@
-
 import React, { useCallback, useState } from "react";
 import axios from "axios";
 import { useDropzone } from "react-dropzone";
@@ -12,6 +11,8 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [compressedSize, setCompressedSize] = useState(null);
   const [progress, setProgress] = useState(null);
+
+  const BASE_URL = "https://file-compressor-wdfg.onrender.com";
 
   const onDrop = useCallback((acceptedFiles) => {
     const f = acceptedFiles[0];
@@ -45,7 +46,7 @@ function App() {
 
     try {
       const res = await axios.post(
-        `http://localhost:5000/compress/${endpoint}`,
+        `${BASE_URL}/compress/${endpoint}`,
         formData,
         {
           responseType: "blob",
