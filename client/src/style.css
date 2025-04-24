@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffe4e6, #fed7e2, #fecaca);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* Card Container */
+.card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.card h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 24px;
+  font-family: "Playfair Display", serif;
+}
+
+/* Dropzone */
+.dropzone {
+  width: 100%;
+  border: 2px dashed #d1d5db;
+  padding: 32px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  max-width: max-content;
+  margin: 0 auto;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background-color: #f3f4f6;
+}
+
+.dropzone:hover {
+  border-color: #f87171;
+  background-color: #fef2f2;
+}
+
+.dropzone.active {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.dropzone p {
+  font-weight: 600;
+  color: #ef4444;
+}
+
+/* File Info */
+.file-info {
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Button */
+.button {
+  margin-top: 24px;
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #ef4444;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #dc2626;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Compressed File Section */
+.compressed-file {
+  margin-top: 32px;
+  text-align: center;
+  background-color: #fef2f2;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f87171;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.compressed-file:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.compressed-file h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.compressed-file a {
+  color: #ef4444; /* Red text for the link */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #fee2e2; /* Light red background for the link */
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+.compressed-file a:hover {
+  background-color: #f87171; /* Darker red on hover */
+  color: white; /* White text on hover */
+}
+
+.compressed-file p {
+  margin-top: 12px;
+  color: #374151; /* Dark gray text */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.compressed-file strong {
+  color: #ef4444; /* Highlighted red text for important values */
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  width: 100%;
+  background-color: #d1d5db;
+  border-radius: 9999px;
+  height: 12px;
+  margin-top: 24px;
+}
+
+.progress-bar {
+  background-color: #ef4444;
+  height: 12px;
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
